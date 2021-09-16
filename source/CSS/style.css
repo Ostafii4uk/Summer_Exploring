@@ -1,0 +1,150 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7pt;
+    color: #54524f;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* НАВІГАЦІЯ САЙТУ */
+.nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.a_nav{
+    margin-right: 60px;
+    font-weight: bold;
+    color: #54524f;
+    font-size: medium;
+}
+
+.search_form{
+    display: inline-block;
+}
+
+.search_input{
+    width: 130px;
+    height: 30px;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #c3bfbc;
+    padding: 5px;
+    text-align: center;
+}
+
+/* MAIN САЙТА */
+
+
+/* IT'S TIME */
+
+.background__its_time{
+    position: relative;
+}
+
+.img__its_time{
+    width: 100%;
+}
+
+.text__its_time{
+    margin: 20% 0;
+    position: absolute;
+    padding: 0px 40px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.title__img{
+    font-weight: 800;
+    font-size: 60px;
+    color: #deb37e;
+}
+
+.subtitle__img{
+    font-weight: 700;
+    font-size: medium;
+    font-style: italic;
+    color: #54524f;
+    margin-bottom: 50px;
+}
+
+.btm{
+    display: inline-block;
+    background-color: #fff;
+    color: #776c64;
+    font-weight: 800;
+    font-size: medium;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.text__img{
+    margin-top: 30px;
+    font-weight: 400;
+    font-style: italic;
+    color: #54524f;
+    font-size: 16px;
+}
+
+/* LET'S GO */
+
+.title__lets_go{
+    font-weight: 800;
+    color: #e2a355;
+    font-size: 35px;
+    text-align: center;
+    margin: 50px auto;
+    text-transform: uppercase;
+}
+
+.subtitle__lets_go{
+    text-align: center;
+    font-weight: 400;
+    color: #7f7770;
+    font-size: 20px;
+}
+
+.items__lets_go{
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.background_item{
+    background-color: #7f7770;
+    padding: 40px 10px;
+}
+
+.img__lets_go{
+    width: 100%;
+    
+}
+
+.title_item{
+    font-weight: 900;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.subtitle_item{
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+}
+
+.item_1,.item_2,.item_3{
+    width: 100%;
+    max-height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
