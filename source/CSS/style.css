@@ -11,11 +11,24 @@ a{
 }
 
 /* НАВІГАЦІЯ САЙТУ */
+.header{
+    position: relative;
+}
+
+.border_header{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+}
+
 .nav_bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 60px;
+    position: relative;
+    z-index: 3;
 }
 
 .a_nav{
@@ -103,7 +116,7 @@ a{
     color: #e2a355;
     font-size: 35px;
     text-align: center;
-    margin: 50px auto;
+    margin: 0px auto 50px auto;
     text-transform: uppercase;
 }
 
@@ -263,4 +276,144 @@ a{
     text-transform: uppercase;
     border-radius: 30px;
     padding: 10px 40px;
+}
+
+/* HIKING */
+.hiking{
+    position: relative;
+    height: 900px;
+    background-color: #99928d;
+}
+
+.text__hiking{
+    position: absolute;
+    z-index: 2;
+    margin: 350px;
+}
+
+.title_hiking{
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subtitle_hiking{
+    font-size: 30px;
+    color: #fff;
+    width: 400;
+    text-align: center;
+}
+
+
+/* EXPLORE THE WORLD */
+.explore_the_world{
+    position: relative;
+}
+
+
+.img_the_world{
+    height: 1000px;
+    max-height: 100%;
+    width: 1440px;
+    max-width: 100%;
+}
+
+.border_top,.border_bottom{
+    width: 100%;
+}
+
+.div_top{
+    position: absolute;
+    z-index: 2;
+    top: -1px;
+}
+
+.div_bottom{
+    position: absolute;
+    z-index: 2;
+    bottom: -5px;
+}
+
+.text__the_world{
+    position: absolute;
+    z-index: 2;
+    top: 400px;
+    right: 120px;
+}
+
+.title__the_world{
+    text-align: end;
+    margin: 0 auto;
+    font-weight: 800;
+    font-style: italic;
+    color: #deb37e;
+    font-size: 70px;
+    text-shadow: 1px -1px 4px #54524f;
+}
+
+.subtitle__the_world{
+    text-align: end;
+    margin: 0 auto;
+    font-weight: 800;
+    font-style: italic;
+    color: #54524f;
+    font-size: 70px;
+    text-shadow: 1px -1px 4px #54524f;
+}
+
+
+/* FOOTER */
+.footer{
+    position: relative;
+    height: 600px;
+    background-color: #7f7770;
+}
+
+.footer__items{
+    display: flex;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    margin: 250px 0px 100px 0px;
+}
+
+.left_footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+    padding: 0 150px 0 100px;
+    color: #fff;
+}
+
+.text__left_footer{
+    flex: 1 0 0;
+}
+
+.title__footer{
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.right_footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 720px;
+    padding-right: 100px;
+}
+
+.nav_bar__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__footer{
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
 }
