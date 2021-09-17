@@ -1,2 +1,2 @@
 # Summer_Exploring
- My first adaptive page template.
+ My first responsive page template.
