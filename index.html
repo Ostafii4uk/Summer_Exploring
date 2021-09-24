@@ -5,33 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUMMER EXPLORING</title>
-    <link rel="stylesheet" href="source/CSS/style.css">
+    <link rel="stylesheet" href="./source/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>   
-    <header class="header">        
-        <nav class="nav_bar">
+    <header class="header">       
+        <div class="nav_bar">
             <div class="logo">
-                <a href="index.html"><img class="img_logo" src="../Summer_Exploring/source/Images/logo.png" alt="Logo"></a>
+                <a href="index.html"><img class="img_logo" src="./source/Images/logo.png" alt="Logo"></a>
             </div>
-            <div class="nav">
+            
+            <input type="checkbox" id="burger">
+            <label for="burger"><span></span></label>
+            <nav class="nav">
                 <a class="a_nav" href="index.html">HOME</a>
                 <a class="a_nav" href="#menu">MENU</a>
                 <a class="a_nav" href="#story">OUR STORY</a>
                 <a class="a_nav" href="#contact">CONTACT US</a>
                 <form class="search_form" action="#">
-                    <input class="search_input" type="text" placeholder="Пошук">
-                </form>
-            </div>
-        </nav>
+                    <input class="search_input" type="text">
+                    <svg class="svg_input" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-1 -1 30 30">
+                        <path id="Search" class="cls-1" d="M1343.9,70.8a11.149,11.149,0,0,0-2.74-15.727,11.653,11.653,0,0,0-16.04,2.689,11.13,11.13,0,0,0,2.74,15.726,11.7,11.7,0,0,0,12.5.507l8.49,8.268a2.436,2.436,0,0,0,3.4.085,2.336,2.336,0,0,0,.09-3.337c-0.03-.03-0.06-0.058-0.09-0.086Zm-9.4.771a7.416,7.416,0,1,1,.01,0h-0.01Z" transform="translate(-1323 -53)"/>
+                    </svg>
+                      
+                </form>               
+            </nav>
+        </div>
     </header>
 
 
     <main>
-        <container class="its_time">            
+        <section class="its_time">            
             <img class="border_top" src="./source/Images/border/top.png" alt="border top">                             
             <div class="text__its_time">
                 <h1 class="title__its_time">
@@ -46,9 +53,9 @@
                 </p>
             </div>                
             <img class="border_bottom" src="./source/Images/border/bottom.png" alt="border bottom">                    
-        </container>
+        </section>
 
-        <container class="lets_go" id="story">
+        <section class="lets_go" id="story">
             <p class="title__lets_go">
                 LET´S go
             </p>
@@ -60,7 +67,7 @@
             <div class="items__lets_go">
 
                 <div class="item_1">
-                    <div class="container_img">
+                    <div class="section_img">
                         <img class="img__lets_go" src=".//source/Images/let's go/1.jpg" alt="2">
                     </div>                   
                     <div class="background__text_lets_go">
@@ -75,7 +82,7 @@
                 </div>
 
                 <div class="item_2">                   
-                    <div class="container_img">
+                    <div class="section_img">
                         <img class="img__lets_go" src="../Summer_Exploring/source/Images/let's go/2.jpg" alt="2">
                     </div>
                     <div class="background__text_lets_go">
@@ -90,7 +97,7 @@
                 </div>
 
                 <div class="item_3">                    
-                    <div class="container_img">
+                    <div class="section_img">
                         <img class="img__lets_go" src="../Summer_Exploring/source/Images/let's go/3.jpg" alt="3">
                     </div>
                     <div class="background__text_lets_go">
@@ -105,12 +112,12 @@
                 </div>
             </div>
 
-            <div class="container__btm_lets_go">
+            <div class="section__btm_lets_go">
                 <a class="btm__lets_go" href="#">show more</a>
             </div>
-        </container>
+        </section>
         
-        <container class="container_for_items" id="menu">
+        <section class="section_for_items" id="menu">
             <div class="discount">
                 <div class="div__photo_promo">
                     <img class="photo_promo" src="./source/Images/discount.jpg" alt="discount">
@@ -122,7 +129,7 @@
                     <p class="subtitle__discount">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </p>
-                    <div class="conteiner__btm_discount">
+                    <div class="section__btm_discount">
                         <a class="btm_discount" href="#">read more</a>
                     </div>                    
                 </div>
@@ -136,7 +143,7 @@
                     <p class="subtitle__promo">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </p>
-                    <div class="conteiner__btm_promo">
+                    <div class="section__btm_promo">
                         <a class="btm_promo" href="#">read more</a>                     
                     </div>
                 </div>
@@ -145,7 +152,7 @@
                     <img class="photo_promo" src="./source/Images/promo.jpg" alt="promo">
                 </div>
             </div>
-        </container>
+        </section>
 
         <div class="hiking">           
             <img class="border_top" src="./source/Images/border/top.png" alt="">            
@@ -176,9 +183,9 @@
 
     <footer class="footer" id="contact">
         <img class="border_top" src="./source/Images/border/top.png" alt="">
-        <container class="container_footer">
+        <section class="section_footer">
             <div class="left_footer">
-                <h2 class="title__footer">
+                <h2 class="title__left_footer">
                     Title Here
                 </h2>
                 <p class="text__left_footer">
@@ -227,7 +234,7 @@
                     </div>
                 </div>
             </div>
-        </container>
+        </section>
     </footer>
 </body>
 </html>
