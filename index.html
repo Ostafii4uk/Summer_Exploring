@@ -5,219 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUMMER EXPLORING</title>
-    <link rel="stylesheet" href="source/CSS/style.css">
+    <link rel="stylesheet" href="./source/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    
-    <header class="header">
-        <div class="border_header">
-            <img class="border_top" src="./source/Images/border/top.png" alt="">
-        </div>
+<body>   
+    <header class="header">       
         <div class="nav_bar">
-
             <div class="logo">
-                <a href="index.html"><img src="../Summer_Exploring/source/Images/logo.png" alt="Logo"></a>
+                <a href="index.html"><img class="img_logo" src="./source/Images/logo.png" alt="Logo"></a>
             </div>
-
-            <div class="nav">
-                <a class="a_nav" href="#">HOME</a>
-                <a class="a_nav" href="#">MENU</a>
-                <a class="a_nav" href="#">OUR STORY</a>
-                <a class="a_nav" href="#">CONTACT US</a>
+            
+            <input type="checkbox" id="burger">
+            <label for="burger"><span></span></label>
+            <nav class="nav">
+                <a class="a_nav" href="index.html">HOME</a>
+                <a class="a_nav" href="#menu">MENU</a>
+                <a class="a_nav" href="#story">OUR STORY</a>
+                <a class="a_nav" href="#contact">CONTACT US</a>
                 <form class="search_form" action="#">
-                    <input class="search_input" type="text" placeholder="Пошук">
-                </form>
-            </div>
+                    <input class="search_input" type="text">
+                    <svg class="svg_input" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-1 -1 30 30">
+                        <path id="Search" class="cls-1" d="M1343.9,70.8a11.149,11.149,0,0,0-2.74-15.727,11.653,11.653,0,0,0-16.04,2.689,11.13,11.13,0,0,0,2.74,15.726,11.7,11.7,0,0,0,12.5.507l8.49,8.268a2.436,2.436,0,0,0,3.4.085,2.336,2.336,0,0,0,.09-3.337c-0.03-.03-0.06-0.058-0.09-0.086Zm-9.4.771a7.416,7.416,0,1,1,.01,0h-0.01Z" transform="translate(-1323 -53)"/>
+                    </svg>
+                      
+                </form>               
+            </nav>
         </div>
-
     </header>
 
 
     <main>
-        <div class="its_time">
-            <div class="background__its_time">
-                <img class="img__its_time" src="../Summer_Exploring/source/Images/summer_exploring.jpg" alt="It's time for hikink">
-                    <div class="text__its_time">
-                        <div class="title__img">
-                            IT´S TIME<br>FOR HIKING
-                        </div>
+        <section class="its_time">            
+            <img class="border_top" src="./source/Images/border/top.png" alt="border top">                             
+            <div class="text__its_time">
+                <h1 class="title__its_time">
+                    IT´S TIME<br>FOR HIKING
+                </h1>
+                <p class="subtitle__its_time">
+                    LOREMIPSUM DOLOR
+                </p>                
+                <a class="btm"  href="#">Read more</a>
+                <p class="text__img">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit, sed do iusmod tempor incididunt ut <br>labore et dolore magna.
+                </p>
+            </div>                
+            <img class="border_bottom" src="./source/Images/border/bottom.png" alt="border bottom">                    
+        </section>
 
-                        <div class="subtitle__img">
-                            LOREMIPSUM DOLOR
-                        </div>
-
-                        <div>
-                            <a class="btm"  href="#">Read more</a>
-                        </div>
-
-                        <div class="text__img">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit, sed do iusmod tempor incididunt ut <br>labore et dolore magna.
-                        </div>
-                    </div>
-                <div class="div_bottom">
-                    <img class="border_bottom" src="./source/Images/border/bottom.png" alt="">
-                </div> 
-            </div>
-        </div>
-
-        <div class="lets_go">
-            <div class="title__lets_go">
+        <section class="lets_go" id="story">
+            <p class="title__lets_go">
                 LET´S go
-            </div>
+            </p>
 
-            <div class="subtitle__lets_go">
+            <p class="subtitle__lets_go">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Vivamus lacinia odio vitae vestibulum vestibulum. 
-            </div>
+            </p>
 
             <div class="items__lets_go">
 
                 <div class="item_1">
-                    <div class="container_img">
+                    <div class="section_img">
                         <img class="img__lets_go" src=".//source/Images/let's go/1.jpg" alt="2">
                     </div>                   
                     <div class="background__text_lets_go">
-                        <div class="title_item">
+                        <p class="title_item">
                             Lorem ipsum
-                        </div>
-                        <div class="subtitle_item">
+                        </p>
+                        <p class="subtitle_item">
                             Lorem ipsum dolor sit amet, 
                             consectetur  adipisicing...
-                        </div>
+                        </p>
                     </div>
                 </div>
 
                 <div class="item_2">                   
-                    <div class="container_img">
+                    <div class="section_img">
                         <img class="img__lets_go" src="../Summer_Exploring/source/Images/let's go/2.jpg" alt="2">
                     </div>
                     <div class="background__text_lets_go">
-                        <div class="title_item">
+                        <p class="title_item">
                             Lorem ipsum
-                        </div>
-                        <div class="subtitle_item">
+                        </p>
+                        <p class="subtitle_item">
                             Lorem ipsum dolor sit amet, 
                             consectetur  adipisicing...
-                        </div>
+                        </p>
                     </div>                    
                 </div>
 
                 <div class="item_3">                    
-                    <div class="container_img">
+                    <div class="section_img">
                         <img class="img__lets_go" src="../Summer_Exploring/source/Images/let's go/3.jpg" alt="3">
                     </div>
                     <div class="background__text_lets_go">
-                        <div class="title_item">
+                        <p class="title_item">
                             Lorem ipsum                    
-                        </div>
-                        <div class="subtitle_item">
+                        </p>
+                        <p class="subtitle_item">
                             Lorem ipsum dolor sit amet, 
                             consectetur  adipisicing... 
-                        </div>
+                        </p>
                     </div>                        
                 </div>
             </div>
 
-            <div class="container__btm_lets_go">
+            <div class="section__btm_lets_go">
                 <a class="btm__lets_go" href="#">show more</a>
             </div>
-        </div>
+        </section>
         
-        <div class="container_for_items">
+        <section class="section_for_items" id="menu">
             <div class="discount">
-                <div>
+                <div class="div__photo_promo">
                     <img class="photo_promo" src="./source/Images/discount.jpg" alt="discount">
-                </div>
-                <div class="background_discount">
-                    <div class="title__discount">
+                </div>                    
+                <div class="background_discount">                   
+                    <h2 class="title__discount">
                         Discount up to <br>50% All Excursions
-                    </div>
-                    <div class="subtitle__discount">
+                    </h2>
+                    <p class="subtitle__discount">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                    </div>
-                    <div class="conteiner__btm_discount">
+                    </p>
+                    <div class="section__btm_discount">
                         <a class="btm_discount" href="#">read more</a>
-                    </div>
-
+                    </div>                    
                 </div>
-
             </div>
 
             <div class="promo">
-                <div class="background_promo">
-                    <div class="title__promo">
+                <div class="background_promo">                    
+                    <h2 class="title__promo">
                         January’s Promo:<br>Buy 1 Get 1 Free!
-                    </div>
-                    <div class="subtitle__promo">
+                    </h2>
+                    <p class="subtitle__promo">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                    </div>
-                    <div class="conteiner__btm_promo">
-                        <a class="btm_promo" href="#">read more</a>
+                    </p>
+                    <div class="section__btm_promo">
+                        <a class="btm_promo" href="#">read more</a>                     
                     </div>
                 </div>
 
                 <div>
                     <img class="photo_promo" src="./source/Images/promo.jpg" alt="promo">
                 </div>
-
             </div>
+        </section>
 
-
-        </div>
-
-        <div class="hiking">
-            <div class="div_top">
-                <img class="border_top" src="./source/Images/border/top.png" alt="">
-            </div>
+        <div class="hiking">           
+            <img class="border_top" src="./source/Images/border/top.png" alt="">            
 
             <div class="text__hiking">
-                <div class="title_hiking">
+                <h2 class="title_hiking">
                     Hiking in the mountains
-                </div>
-                <div class="subtitle_hiking">
+                </h2>
+                <p class="subtitle_hiking">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis 
-                </div>
+                </p>
             </div>
 
-            <div class="div_bottom">
-                <img class="border_bottom" src="./source/Images/border/bottom.png" alt="">
-            </div>
+            <img class="border_bottom" src="./source/Images/border/bottom.png" alt="">            
         </div>
 
-        <div class="explore_the_world">
-            <div class="div_top">
-                <img class="border_top" src="./source/Images/border/top.png" alt="">
-            </div>
-            <div class="div_img">
-                <img class="img_the_world" src="./source/Images/the world.jpg" alt="The world">
-            </div>
+        <div class="explore_the_world">            
+            <img class="border_top" src="./source/Images/border/top.png" alt="">
             <div class="text__the_world">
                 <p class="title__the_world">EXPLORE</p>
                 <p class="subtitle__the_world">THE WORLD</p>
             </div>
-            <div class="div_bottom">
-                <img class="border_bottom" src="./source/Images/border/bottom.png" alt="">
-            </div>
+            <img class="border_bottom" src="./source/Images/border/bottom.png" alt="">
            
         </div>
     </main>
 
 
-    <footer class="footer">
-        <div class="div_top">
-            <img class="border_top" src="./source/Images/border/top.png" alt="">
-        </div>
-        <div class="footer__items">
+    <footer class="footer" id="contact">
+        <img class="border_top" src="./source/Images/border/top.png" alt="">
+        <section class="section_footer">
             <div class="left_footer">
-                <div class="title__footer">
+                <h2 class="title__left_footer">
                     Title Here
-                </div>
-                <div class="text__left_footer">
+                </h2>
+                <p class="text__left_footer">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. 
-                </div>
+                </p>
                 <div class="icon_logo__left_footer">
                     <a href="#"><img src="./source/Images/social logo icon/Instagram.png" alt="Instagram"></a>
                     <a href="#"><img src="./source/Images/social logo icon/Facebook.png" alt="Facebook"></a>
@@ -227,21 +200,21 @@
             </div>
             <div class="right_footer">
                 <div class="about__footer">
-                    <div class="title__footer">
+                    <h3 class="title__footer">
                         About
-                    </div>
+                    </h3>
                     <div class="nav_bar__footer">                   
                         <a class="nav__footer" href="#">History</a>
-                        <a class="nav__footer" href="#">Our Team</a>
+                        <a class="nav__footer" href="#team">Our Team</a>
                         <a class="nav__footer" href="#">Brand Guidelines</a>
                         <a class="nav__footer" href="#">Terms & Condition</a>
                         <a class="nav__footer" href="#">Privacy Policy</a>
                     </div>    
                 </div>
                 <div class="services__footer">
-                    <div class="title__footer">
+                    <h3 class="title__footer">
                         Services
-                    </div>
+                    </h3>
                     <div class="nav_bar__footer">                   
                         <a class="nav__footer" href="#">How to Order</a>
                         <a class="nav__footer" href="#">Our Product</a>
@@ -249,21 +222,19 @@
                         <a class="nav__footer" href="#">Promo</a>
                         <a class="nav__footer" href="#">Payment Method</a>
                     </div>
-
                 </div>
                 <div class="other__footer">
-                    <div class="title__footer">
+                    <h3 class="title__footer">
                         Other
-                    </div>
+                    </h3>
                     <div class="nav_bar__footer">                   
                         <a class="nav__footer" href="#">Contact Us</a>
                         <a class="nav__footer" href="#">Help</a>
                         <a class="nav__footer" href="#">Privacy</a>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
